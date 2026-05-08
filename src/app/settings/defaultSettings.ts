@@ -3,11 +3,11 @@ import { type ClaudianSettings } from '../../core/types/settings';
 import { getBuiltInProviderDefaultConfigs } from '../../providers/defaultProviderConfigs';
 
 export const DEFAULT_CLAUDIAN_SETTINGS: ClaudianSettings = {
-  userName: '',
+  userName: '阿杰',
 
   permissionMode: 'yolo',
 
-  model: 'haiku',
+  model: 'default',
   thinkingBudget: 'off',
   effortLevel: 'high',
   serviceTier: 'default',
