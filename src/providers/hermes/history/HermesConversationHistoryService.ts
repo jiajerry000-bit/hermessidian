@@ -4,8 +4,8 @@
  * Hermes doesn't maintain its own history - conversation context
  * is passed via the prompt. This is a stub implementation.
  */
-import type { Conversation } from '../../../core/types';
 import type { ProviderConversationHistoryService } from '../../../core/providers/types';
+import type { Conversation } from '../../../core/types';
 
 export class HermesConversationHistoryService implements ProviderConversationHistoryService {
   async hydrateConversationHistory(

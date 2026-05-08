@@ -5,7 +5,6 @@
  * Hermes doesn't support tools yet, so this is a stub.
  */
 import type { ProviderTaskResultInterpreter, ProviderTaskTerminalStatus } from '../../../core/providers/types';
-import type { ToolCallInfo } from '../../../core/types';
 
 export class HermesTaskResultInterpreter implements ProviderTaskResultInterpreter {
   hasAsyncLaunchMarker(_toolUseResult: unknown): boolean {

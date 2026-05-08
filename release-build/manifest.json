@@ -1,0 +1,10 @@
+{
+  "id": "hermessidian",
+  "name": "Hermessidian",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.5",
+  "description": "Embeds Hermes Agent as an AI collaborator in your vault. Connect to WSL2 Hermes for chat, powered by the Nous Research Hermes model.",
+  "author": "jiajerry000-bit",
+  "authorUrl": "https://github.com/jiajerry000-bit/hermessidian",
+  "isDesktopOnly": true
+}

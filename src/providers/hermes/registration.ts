@@ -4,8 +4,8 @@
  * Registers Hermes as a chat provider for Obsidian.
  * Uses WSL2 Hermes CLI for query execution.
  */
-import type ClaudianPlugin from '../../main';
 import type { ProviderRegistration } from '../../core/providers/types';
+import type ClaudianPlugin from '../../main';
 import { HERMES_PROVIDER_CAPABILITIES } from './capabilities';
 import { HermesConversationHistoryService } from './history/HermesConversationHistoryService';
 import { HermesChatRuntime } from './runtime/HermesChatRuntime';

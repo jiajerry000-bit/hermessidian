@@ -4,7 +4,9 @@
  * Uses `wsl hermes -z` for oneshot query execution.
  * Hermes Agent runs in WSL2; this plugin runs in Windows Obsidian.
  */
-import type ClaudianPlugin from '../../../main';
+import { execSync } from 'child_process';
+import { randomUUID } from 'crypto';
+
 import type { ProviderCapabilities, ProviderId } from '../../../core/providers/types';
 import type { ChatRuntime } from '../../../core/runtime/ChatRuntime';
 import type {
@@ -22,9 +24,8 @@ import type {
   SessionUpdateResult,
   SubagentRuntimeState,
 } from '../../../core/runtime/types';
-import type { ChatMessage, SlashCommand, StreamChunk, ToolCallInfo } from '../../../core/types';
-import { execSync } from 'child_process';
-import { randomUUID } from 'crypto';
+import type { ChatMessage, SlashCommand, StreamChunk } from '../../../core/types';
+import type ClaudianPlugin from '../../../main';
 
 const HERMES_PROVIDER_ID = 'hermes' as ProviderId;
 
